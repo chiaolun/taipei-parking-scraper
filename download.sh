@@ -3,6 +3,8 @@
 URL_META=https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json
 URL_INFO=https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_allavailable.json
 
+cd "$(dirname "$0")"
+
 if [[ $1 == "meta" ]]; then
     META_PAYLOAD=$(curl -sS $URL_META)
     META_TIME=$(echo -nE "$META_PAYLOAD" | jq -r .data.UPDATETIME)
