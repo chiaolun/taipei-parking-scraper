@@ -2,7 +2,7 @@
 
 URL_META=https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json
 URL_INFO=https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_allavailable.json
-TZ="Asia/Taipei"
+export TZ="Asia/Taipei"
 
 cd "$(dirname "$0")"
 
