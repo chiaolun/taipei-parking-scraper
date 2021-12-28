@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 URL_META=https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json
 URL_INFO=https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_allavailable.json
 export TZ="Asia/Taipei"
